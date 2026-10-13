@@ -1,33 +1,43 @@
 <!doctype html>
-<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Responsive Table</title>
 	<style>
-		table{
+		table {
 			width: 100%;
-			height: auto;
-			table-layout: fixed;
 			border-collapse: collapse;
 		}
 
 		td {
 			width: 50%;
 			border: 1px solid black;
-			padding: 0px;
+			padding: 10px;
+			height: 160px;
 		}
 
 		.box {
-			height: 160px;
-			max-height: 20vh;
-			padding: 10px;
+			box-sizing: border-box;
+		}
+
+		@media (max-width: 600px) {
+			td {
+				display: block;
+				width: 100%;
+				height: 120px;
+			}
 		}
 	</style>
-	<body>
-		<table>
-			<tbody>
-				<tr>
-					<td class="box" style="background: #3f122f">Hello</td>
-					<td class="box" style="background: #dfccc5">World!</td>
-				</tr>
-			</tboby>
-		</table>	
-	</body>
+</head>
+<body>
+	<table>
+		<tbody>
+			<tr>
+				<td class="box" style="background: #3f122f; color: white;">Hello</td>
+				<td class="box" style="background: #dfccc5;">World!</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
 </html>
