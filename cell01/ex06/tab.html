@@ -5,35 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Simple Responsive Table</title>
 	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
 		table {
 			width: 100%;
+			height: 100vh;
 			border-collapse: collapse;
 		}
 
 		td {
 			width: 50%;
 			border: 1px solid black;
-			padding: 10px;
-			height: 160px;
-		}
-
-		.box {
-			box-sizing: border-box;
-		}
-
-		@media (max-width: 600px) {
-			td {
-				display: block;
-				width: 100%;
-				height: 120px;
-			}
-		}
-
-		@media (max-height: 500px) {
-			td {
-				height: 80px;
-				padding: 5px;
-			}
 		}
 	</style>
 </head>
@@ -41,8 +26,8 @@
 	<table>
 		<tbody>
 			<tr>
-				<td class="box" style="background: #3f122f; color: white;">Hello</td>
-				<td class="box" style="background: #dfccc5;">World!</td>
+				<td style="background: #3f122f;">Hello</td>
+				<td style="background: #dfccc5;">World!</td>
 			</tr>
 		</tbody>
 	</table>
