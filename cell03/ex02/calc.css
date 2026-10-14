@@ -6,8 +6,7 @@ input {
     sans-serif;
 }
 
-select,
-::picker(select) {
+select{
   appearance: base-select;
 }
 
@@ -21,23 +20,8 @@ button {
   text-shadow: 1px 1px 1px black;
   border-radius: 10px;
   background-color: tomato;
-  background-image: linear-gradient(
-    to top left,
-    rgb(0 0 0 / 0.2),
-    rgb(0 0 0 / 0.2) 30%,
-    transparent
-  );
-  box-shadow:
-    inset 2px 2px 3px rgb(255 255 255 / 0.6),
-    inset -2px -2px 3px rgb(0 0 0 / 0.6);
 }
 
 button:hover {
   background-color: red;
-}
-
-button:active {
-  box-shadow:
-    inset -2px -2px 3px rgb(255 255 255 / 0.6),
-    inset 2px 2px 3px rgb(0 0 0 / 0.6);
 }
