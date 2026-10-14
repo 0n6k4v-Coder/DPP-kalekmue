@@ -2,9 +2,16 @@
 
 if [ "$#" -eq 0 ]; then
 	echo "No arguments supplied"
-else
-	for arg in "$@"
-	do
-		echo "$arg"
-	done
+	exit 1
 fi
+
+count=0
+
+for arg in "$@"; do
+	echo "$arg"
+
+	((count++))
+	if [ "$count" -eq 3 ]; then
+		break
+	fi
+done
