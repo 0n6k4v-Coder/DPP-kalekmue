@@ -21,6 +21,11 @@ img {
   height: 100%;
 }
 
+.card a {
+  width: 20px;
+  height: 20px;
+}
+
 .card h2 {
   margin: 0;
   padding: 0.5rem;
