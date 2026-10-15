@@ -1,0 +1,28 @@
+* {
+  height: 100vh;
+}
+
+div {
+  height: 500px;
+  background-color: black;
+  color: Red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax {
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-1 {
+  background-image: url("https://m.media-amazon.com/images/M/MV5BYjk1NjgwZDMtYzI5OS00Y2Q4LWI1NmItNTE5OGU2NDVmMTAxXkEyXkFqcGc@._V1_.jpg");
+}
+
+.bg-2 {
+  background-image: url("https://www.metalbridges.com/wp-content/uploads/2026/07/avengers-doomsday.jpg");
+}
